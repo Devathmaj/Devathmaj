@@ -1,4 +1,3 @@
-add that in here 
 <div align="center">
 
 # ⚡ Devathmaj A Kaliyathan  
