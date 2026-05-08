@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated header wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a2a4a,100:58A6FF&height=200&section=header&text=Devathmaj%20A%20Kaliyathan&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Cloud%20Reliability%20%E2%80%A2%20Systems%20%E2%80%A2%20AI%20%26%20Automation&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a2a4a,100:58A6FF&height=200&section=header&text=Devathmaj%20A%20Kaliyathan&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Cloud%20Reliability%20%E2%80%A2%20Systems%20%E2%80%A2%20AI%20%26amp%3B%20Automation&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
 
 <!-- Typing animation — refined lines -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&multiline=false&width=700&height=50&lines=Cloud+Reliability+Engineer+%E2%98%81%EF%B8%8F;Systems+%26+Backend+Developer+%E2%9A%99%EF%B8%8F;AI+%26+Automation+Enthusiast+%F0%9F%A4%96;Building+Scalable%2C+Observable+Systems+%F0%9F%9B%B0%EF%B8%8F" />
@@ -118,9 +118,9 @@ My work sits at the intersection of four domains:
 
 <div align="center">
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Devathmaj&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&text_color=c9d1d9&rank_icon=github&include_all_commits=true&count_private=true"/>
-&nbsp;&nbsp;
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devathmaj&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&langs_count=8"/>
+![GitHub Stats](https://github-readme-stats-five-brown-25.vercel.app/api?username=devathmaj&show_icons=true&theme=radical&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats-five-brown-25.vercel.app/api/top-langs/?username=devathmaj&layout=compact&theme=radical&hide_border=true)
 
 </div>
 
@@ -174,12 +174,8 @@ Security:
 
 <br/>
 
-<!-- Animated snake contribution graph -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Devathmaj/Devathmaj/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Devathmaj/Devathmaj/output/github-contribution-grid-snake.svg"/>
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Devathmaj/Devathmaj/output/github-contribution-grid-snake.svg"/>
-</picture>
+<!-- Trophy stats -->
+<img src="https://github-profile-trophy.vercel.app/?username=Devathmaj&theme=algolia&no-frame=true&no-bg=true&row=1&column=6" />
 
 </div>
 
