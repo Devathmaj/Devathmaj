@@ -96,9 +96,9 @@ I enjoy designing infrastructure and services that prioritize:
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Devathmaj&show_icons=true&theme=transparent&hide_border=true&rank_icon=github"/>
+![GitHub Stats](https://github-readme-stats-five-brown-25.vercel.app/api?username=devathmaj&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devathmaj&layout=compact&theme=transparent&hide_border=true"/>
+![Top Languages](https://github-readme-stats-five-brown-25.vercel.app/api/top-langs/?username=devathmaj&layout=compact&theme=radical&hide_border=true)
 
 </div>
 
