@@ -50,11 +50,12 @@ From **Kubernetes clusters** to **AI-driven automation**, I’m focused on build
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Devathmaj&show_icons=true&theme=radical&hide_border=true&cache_seconds=86400)
+![GitHub Stats](https://github-readme-stats-five-brown-25.vercel.app/api?username=devathmaj&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Devathmaj&layout=compact&theme=radical&hide_border=true&cache_seconds=86400)
+![Top Languages](https://github-readme-stats-five-brown-25.vercel.app/api/top-langs/?username=devathmaj&layout=compact&theme=radical&hide_border=true)
 
 </div>
+
 
 
 ---
