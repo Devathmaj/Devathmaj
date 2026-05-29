@@ -9,11 +9,15 @@
 
 <p align="center">
 <a href="https://linkedin.com/in/devathmaj">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="mailto:devathmaj@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://devathmaj.github.io/Portfolio">
+<img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=google-chrome&logoColor=white"/>
 </a>
 </p>
 
