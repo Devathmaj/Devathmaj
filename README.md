@@ -146,29 +146,34 @@ Anonymous social platform built around real-time concurrent messaging.
 
 ### [Tracient](https://github.com/Devathmaj/tracient) — Blockchain Welfare Intelligence Platform
 
-Hyperledger Fabric-based platform for income traceability, BPL/APL classification, and welfare verification using AI/ML for anomaly detection.
+Hyperledger Fabric-based welfare distribution platform designed for income traceability, beneficiary verification, and transparent social welfare management.
 
-*(Collaborative project — my contributions: [describe your specific modules here])*
+<details>
+<summary><b>What's under the hood</b></summary>
+
+<br/>
+
+- Developed a blockchain-backed UPI payment system with QR-based transactions and immutable transaction recording
+- Built a family management module with ration-card-based tracking and automated profile synchronization
+- Implemented authentication and authorization infrastructure across frontend and backend services
+- Finalized blockchain ↔ backend integration, eliminating environment-specific configuration dependencies
+- Designed worker/employer role transition workflows with verification and account history tracking
+- Implemented comprehensive input validation covering security, business logic, and data integrity
+- Created architecture and ER diagrams documenting system design, database relationships, and component interactions
+- Performed frontend maintenance including navigation fixes, code cleanup, and UI consistency improvements
+
+</details>
 
 <br/>
 
 <p align="left">
-<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
 <img src="https://img.shields.io/badge/Hyperledger_Fabric-2F3134?style=flat-square"/>
+<img src="https://img.shields.io/badge/Blockchain-121D33?style=flat-square"/>
+<img src="https://img.shields.io/badge/Authentication-0A0A0A?style=flat-square"/>
+<img src="https://img.shields.io/badge/UPI_Payments-5F259F?style=flat-square"/>
+<img src="https://img.shields.io/badge/Validation-22863A?style=flat-square"/>
 <img src="https://img.shields.io/badge/Machine_Learning-102230?style=flat-square"/>
-</p>
-
----
-
-## Stack
-
-### Languages
-
-<p>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white"/>
-<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&amp;logo=go&amp;logoColor=white"/>
-<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&amp;logo=c&amp;logoColor=white"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"/>
 </p>
 
 ### Infrastructure
