@@ -40,7 +40,7 @@ I care about the full stack below the UI: schema design, async processing, algor
 
 | 💻 Backend | 🗄️ Data & Databases | 🤖 ML Systems | ☁️ Infrastructure |
 |:-:|:-:|:-:|:-:|
-| REST APIs · FastAPI · Go | PostgreSQL · Redis · SQLAlchemy | XGBoost · Pipelines · Feature Eng. | Docker · Kubernetes · Terraform |
+| REST APIs · FastAPI · Go | PostgreSQL · Redis · SQLAlchemy · MongoDB | XGBoost · Pipelines · Feature Eng. | Docker · GitHub Actions · AWS · Azure |
 
 </div>
 
