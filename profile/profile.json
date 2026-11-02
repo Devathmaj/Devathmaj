@@ -1,0 +1,61 @@
+{
+  "masthead": "THE PROFILE",
+  "issue": "VOL. 01",
+  "year": "MMXXVI",
+  "location": "KERALA",
+  "name": "Devathmaj A Kaliyathan",
+  "tagline": "software engineer · backend systems, infrastructure, applied ai",
+  "selectedWork": {
+    "label": "SELECTED WORK",
+    "items": [
+      {
+        "text": "ConfessIt",
+        "href": "https://devathmaj.me/projects/confessit"
+      },
+      {
+        "text": "Tracient",
+        "href": "https://devathmaj.me/projects/tracient"
+      },
+      {
+        "text": "VoucherBot",
+        "href": "https://devathmaj.me/projects/voucherbot"
+      }
+    ],
+    "note": "and more, at devathmaj.me/projects",
+    "noteHref": "https://devathmaj.me/projects"
+  },
+  "credentials": {
+    "label": "CREDENTIALS",
+    "items": [
+      {
+        "lines": [
+          "Microsoft Certified: Azure AI",
+          "Cloud Developer Associate"
+        ],
+        "href": "https://devathmaj.me/certificates"
+      },
+      {
+        "text": "AWS Certified AI Practitioner",
+        "href": "https://devathmaj.me/certificates"
+      }
+    ],
+    "note": "verified at devathmaj.me/certificates",
+    "noteHref": "https://devathmaj.me/certificates"
+  },
+  "principle": {
+    "label": "PRINCIPLE",
+    "quote": [
+      "“Make it useful. Make it dependable.",
+      "Keep it deliberate.”"
+    ],
+    "attribution": "WORKING PRINCIPLE",
+    "website": "devathmaj.me",
+    "websiteHref": "https://devathmaj.me",
+    "email": "devathmaj@gmail.com"
+  },
+  "footer": {
+    "left": "DEVATHMAJ.ME · @DEVATHMAJ",
+    "leftHref": "https://devathmaj.me",
+    "right": "SET IN SVG · ONE IMAGE"
+  }
+}
