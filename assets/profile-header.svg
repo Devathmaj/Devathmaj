@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-labelledby="title desc">
+  <title id="title">The Profile</title>
+  <desc id="desc">Volume 01, 2026</desc>
+  <rect width="1200" height="92" fill="#111111" />
+  <text x="48" y="58" fill="#f6f1e7" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-style="italic" letter-spacing="2.2">THE PROFILE</text>
+  <text x="1152" y="55" fill="#f6f1e7" font-family="'Courier New', monospace" font-size="19" text-anchor="end" letter-spacing="0.7">VOL. 01 · 2026</text>
+  <line x1="48" y1="77" x2="1152" y2="77" stroke="#5b5852" stroke-width="1" />
+</svg>
