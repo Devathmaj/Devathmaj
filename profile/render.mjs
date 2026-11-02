@@ -29,12 +29,13 @@ const W = 1200;
 const M = 72;
 const RIGHT = W - M;
 
-const CONTENT_TOP = 248;
-const LABEL_Y = 272;
-const FIRST_ITEM_Y = 302;
-const WORK_LINE = 26;
-const CRED_LINE = 21;
-const NOTE_GAP = 30;
+const CONTENT_TOP = 270;
+const LABEL_Y = 296;
+const FIRST_ITEM_Y = 330;
+const WORK_LINE = 30;
+const CRED_LINE = 24;
+const NOTE_GAP = 34;
+const NOTE_LINE = 22;
 
 const escapeText = (value) =>
   String(value).replace(/[&<>]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[char]));
@@ -106,8 +107,10 @@ const textBlock = ({
 // ---------------------------------------------------------------- column math
 
 const work = data.selectedWork;
+const workNoteLines = work.noteLines ?? [work.note];
 const workYs = work.items.map((_, index) => FIRST_ITEM_Y + index * WORK_LINE);
 const workNoteY = workYs[workYs.length - 1] + NOTE_GAP;
+const workNoteYs = workNoteLines.map((_, index) => workNoteY + index * NOTE_LINE);
 
 const credentials = data.credentials;
 let credentialCursor = FIRST_ITEM_Y;
@@ -120,20 +123,28 @@ const credentialItems = credentials.items.map((item) => {
 const lastCredentialY = Math.max(
   ...credentialItems.flatMap(({ ys }) => ys)
 );
+const credentialNoteLines = credentials.noteLines ?? [credentials.note];
 const credentialNoteY = lastCredentialY + NOTE_GAP;
+const credentialNoteYs = credentialNoteLines.map(
+  (_, index) => credentialNoteY + index * NOTE_LINE
+);
 
 const principle = data.principle;
 const boxTop = CONTENT_TOP;
 const boxLabelY = LABEL_Y;
-const quoteY = 300;
-const quoteLineHeight = 24;
+const quoteY = 326;
+const quoteLineHeight = 26;
 const quoteYs = principle.quote.map((_, index) => quoteY + index * quoteLineHeight);
-const attributionY = quoteYs[quoteYs.length - 1] + 22;
-const boxBottom = attributionY + 12;
-const websiteY = boxBottom + 26;
-const emailY = websiteY + 22;
+const attributionY = quoteYs[quoteYs.length - 1] + 24;
+const boxBottom = attributionY + 14;
+const websiteY = boxBottom + 30;
+const emailY = websiteY + 24;
 
-const contentBottom = Math.max(workNoteY + 10, credentialNoteY + 10, emailY + 8);
+const contentBottom = Math.max(
+  workNoteYs[workNoteYs.length - 1] + 10,
+  credentialNoteYs[credentialNoteYs.length - 1] + 10,
+  emailY + 8
+);
 const columnRuleBottom = contentBottom + 12;
 const footerRuleY = columnRuleBottom + 18;
 const folioY = footerRuleY + 20;
@@ -176,50 +187,50 @@ parts.push(
   `  ${line(M, 40, RIGHT, 40, INK, 3)}`,
   `  ${text({
     x: M,
-    y: 68,
+    y: 70,
     content: data.masthead,
-    size: 19,
+    size: 22,
     weight: 700,
     spacing: 7,
   })}`,
   `  ${text({
     x: RIGHT,
-    y: 68,
+    y: 70,
     content: `${data.issue} · ${data.year} · ${data.location}`,
-    size: 10,
+    size: 11.5,
     fill: MUTED,
     family: MONO,
     anchor: "end",
     spacing: 3,
   })}`,
-  `  ${line(M, 84, RIGHT, 84, INK, 0.8)}`
+  `  ${line(M, 88, RIGHT, 88, INK, 0.8)}`
 );
 
 // Headline
 parts.push(
   `  ${text({
     x: M,
-    y: 164,
+    y: 174,
     content: data.name,
-    size: 62,
+    size: 72,
     weight: 700,
     spacing: -1.5,
   })}`,
   `  ${text({
     x: M,
-    y: 200,
+    y: 214,
     content: data.tagline,
-    size: 19,
+    size: 22,
     fill: "#4a443a",
     italic: true,
   })}`,
-  `  ${line(M, 228, RIGHT, 228, RULE, 0.8)}`
+  `  ${line(M, 244, RIGHT, 244, RULE, 0.8)}`
 );
 
 // Column rules
 parts.push(
-  `  ${line(dividerOne, 252, dividerOne, columnRuleBottom, RULE, 0.8)}`,
-  `  ${line(dividerTwo, 252, dividerTwo, columnRuleBottom, RULE, 0.8)}`
+  `  ${line(dividerOne, 272, dividerOne, columnRuleBottom, RULE, 0.8)}`,
+  `  ${line(dividerTwo, 272, dividerTwo, columnRuleBottom, RULE, 0.8)}`
 );
 
 // Selected work
@@ -228,7 +239,7 @@ parts.push(
     x: columns.left.x,
     y: LABEL_Y,
     content: `— ${work.label}`,
-    size: 9.5,
+    size: 11,
     fill: MUTED,
     family: MONO,
     spacing: 3.5,
@@ -241,7 +252,7 @@ work.items.forEach((item, index) => {
       x: columns.left.x,
       y: workYs[index],
       content: item.text,
-      size: 17,
+      size: 20,
       weight: 700,
       href: item.href,
     })}`
@@ -249,11 +260,11 @@ work.items.forEach((item, index) => {
 });
 
 parts.push(
-  `  ${text({
+  `  ${textBlock({
     x: columns.left.x,
-    y: workNoteY,
-    content: work.note,
-    size: 14,
+    ys: workNoteYs,
+    lines: workNoteLines,
+    size: 17,
     fill: SOFT,
     italic: true,
     href: work.noteHref,
@@ -266,7 +277,7 @@ parts.push(
     x: columns.middle.x,
     y: LABEL_Y,
     content: `— ${credentials.label}`,
-    size: 9.5,
+    size: 11,
     fill: MUTED,
     family: MONO,
     spacing: 3.5,
@@ -279,7 +290,7 @@ credentialItems.forEach(({ item, lines, ys }) => {
       x: columns.middle.x,
       ys,
       lines,
-      size: 16,
+      size: 19,
       weight: 700,
       href: item.href,
     })}`
@@ -287,11 +298,11 @@ credentialItems.forEach(({ item, lines, ys }) => {
 });
 
 parts.push(
-  `  ${text({
+  `  ${textBlock({
     x: columns.middle.x,
-    y: credentialNoteY,
-    content: credentials.note,
-    size: 14,
+    ys: credentialNoteYs,
+    lines: credentialNoteLines,
+    size: 16,
     fill: SOFT,
     italic: true,
     href: credentials.noteHref,
@@ -305,7 +316,7 @@ parts.push(
     x: columns.right.x + 20,
     y: boxLabelY,
     content: `— ${principle.label}`,
-    size: 9.5,
+    size: 11,
     fill: MUTED,
     family: MONO,
     spacing: 3.5,
@@ -314,7 +325,7 @@ parts.push(
     x: columns.right.x + 20,
     ys: quoteYs,
     lines: principle.quote,
-    size: 16,
+    size: 19,
     fill: PAPER,
     italic: true,
   })}`,
@@ -322,7 +333,7 @@ parts.push(
     x: columns.right.x + 20,
     y: attributionY,
     content: `— ${principle.attribution}`,
-    size: 10,
+    size: 11.5,
     fill: "#9a917f",
     family: MONO,
     spacing: 1.5,
@@ -331,14 +342,14 @@ parts.push(
     x: columns.right.x,
     y: websiteY,
     content: principle.website,
-    size: 18,
+    size: 21,
     href: principle.websiteHref,
   })}`,
   `  ${text({
     x: columns.right.x,
     y: emailY,
     content: principle.email,
-    size: 11,
+    size: 13,
     fill: MUTED,
     family: MONO,
     spacing: 1,
@@ -353,7 +364,7 @@ parts.push(
     x: M,
     y: folioY,
     content: data.footer.left,
-    size: 9.5,
+    size: 11,
     fill: MUTED,
     family: MONO,
     spacing: 2.5,
@@ -363,7 +374,7 @@ parts.push(
     x: RIGHT,
     y: folioY,
     content: data.footer.right,
-    size: 9.5,
+    size: 11,
     fill: MUTED,
     family: MONO,
     anchor: "end",
