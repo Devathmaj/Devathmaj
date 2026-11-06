@@ -1,4 +1,4 @@
-<!-- Generated from profile/profile.json by profile/render.mjs. -->
+<!-- Artwork generated from profile/profile.json by profile/render.mjs. -->
 
 <p align="center">
   <a href="https://devathmaj.me">

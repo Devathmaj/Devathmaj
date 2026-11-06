@@ -4,7 +4,9 @@
   "year": "MMXXVI",
   "location": "KERALA",
   "name": "Devathmaj A Kaliyathan",
+  "nameLines": ["Devathmaj", "A Kaliyathan"],
   "tagline": "software engineer · backend systems, infrastructure, applied ai",
+  "focus": ["Backend systems", "Infrastructure", "Applied AI"],
   "selectedWork": {
     "label": "SELECTED WORK",
     "items": [
@@ -63,6 +65,6 @@
   "footer": {
     "left": "DEVATHMAJ.ME · @DEVATHMAJ",
     "leftHref": "https://devathmaj.me",
-    "right": "SET IN SVG · ONE IMAGE"
+    "stages": ["BUILD", "REFINE", "SHIP"]
   }
 }
